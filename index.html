@@ -16,46 +16,46 @@
                 <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Bill</label>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-dollar.svg" alt="" class="h-5 mt-2">
-                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" id="inputBill" placeholder="0">
+                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0">
                 </div>
-            </form>
-            <h1 class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Select Tip %</h1>
-            <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3 gap-3 mt-3">
-                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">5%</button>
-                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">10%</button>
-                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">15%</button>
-                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">25%</button>
-                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">50%</button>
-                <input type="text" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
-            </div>
-            <form action="" class="bill flex flex-col mt-6" id="billSec">
+                <h1 class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Select Tip %</h1>
+                <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3 gap-3 mt-3">
+                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="5%">5%</button>
+                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="10%">10%</button>
+                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="15%">15%</button>
+                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="25%">25%</button>
+                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="50%">50%</button>
+                    <input type="text" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
+                </div>
                 <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan">Number of People</label>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
-                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" id="inputBill" placeholder="0">
+                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0">
                 </div>
-            </form>
         </div>
 
         <div class="bg-darkCyan rounded-lg mt-8 pb-8 mb-9 mx-6">
-            <div class="flex justify-between py-10 px-8">
-                <div>
-                    <h1 class="text-white font-onlyFont text-lg font-semibold">Tip Amount</h1>
-                    <span class="text-grayishCyan text-md font-onlyFont font-semibold">/ person</span>
+                <div class="flex justify-between py-10 px-8">
+                    <div>
+                        <h1 class="text-white font-onlyFont text-lg font-semibold">Tip Amount</h1>
+                        <span class="text-grayishCyan text-md font-onlyFont font-semibold">/ person</span>
+                    </div>
+                    <h1 id="final-textOne" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
                 </div>
-                <h1 id="final-textOne" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
-            </div>
-            <div class="flex justify-between px-8">
-                <div>
-                    <h1 class="text-white font-onlyFont text-lg font-semibold">Total</h1>
-                    <span class="text-grayishCyan text-md font-onlyFont font-semibold">/ person</span>
+                <div class="flex justify-between px-8">
+                    <div>
+                        <h1 class="text-white font-onlyFont text-lg font-semibold">Total</h1>
+                        <span class="text-grayishCyan text-md font-onlyFont font-semibold">/ person</span>
+                    </div>
+                    <h1 id="final-textTwo" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
                 </div>
-                <h1 id="final-textTwo" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
-            </div>
-            <div class="flex px-8">
-                <button class="btn1 uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg" id="resetBtn">Reset</button>
-            </div>
+                <div class="flex px-8">
+                    <button type="reset" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg" value="submit">Reset</button>
+                </div>
         </div>
+    </form>
     </section>
+
+    <script src="/script.js"></script>
 </body>
 </html>
