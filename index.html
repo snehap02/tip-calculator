@@ -11,21 +11,35 @@
 <body class="bg-lightGrayCyan bg-no-repeat">
     <img src="/images/logo.svg" alt="" class="mx-auto mt-10">
     <section class="whole-container bg-white grid grid-cols-1 md:grid md:grid-cols-2 mt-10 rounded-xl">
-        <div class="bill-section" id="billSection">
+        <div class="bill-section mx-auto" id="billSection">
             <form action="" class="bill flex flex-col" id="billSec">
-                <label for="price" class="font-onlyFont text-md font-semibold">Bill</label>
-                <div class="flex px-4 bg-verylightGrayCyan p-2">
+                <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Bill</label>
+                <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-dollar.svg" alt="" class="h-5 mt-2">
                     <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" id="inputBill">
                 </div>
             </form>
-            <h1 class="font-onlyFont text-md font-semibold">Select Tip %</h1>
-            <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3">
-                
+            <h1 class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Select Tip %</h1>
+            <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3 gap-3 mt-3">
+                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">5%</button>
+                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">10%</button>
+                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">15%</button>
+                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">25%</button>
+                <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold">50%</button>
+                <input type="text" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
             </div>
+            <form action="" class="bill flex flex-col mt-6" id="billSec">
+                <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan">Number of People</label>
+                <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
+                    <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
+                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" id="inputBill">
+                </div>
+            </form>
         </div>
 
-        <div class=""></div>
+        <div class="bg-darkCyan rounded-lg">
+            
+        </div>
     </section>
 </body>
 </html>
