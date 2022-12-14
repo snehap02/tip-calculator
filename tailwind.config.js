@@ -9,7 +9,7 @@ module.exports = {
         darkGrayishCyan: '#5e7a7d',
         grayishCyan: '#7f9c9f',
         lightGrayCyan: '#c5e4e7',
-        verylightGrayCyan: '#f4fafa',
+        verylightGrayCyan: '#EAF5F5',
         white: '#ffffff'
       },
       fontFamily:{
