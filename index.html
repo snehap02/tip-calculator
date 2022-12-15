@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style.css">
     <title>Tip Calculator</title>
 </head>
-<body class="bg-lightGrayCyan bg-no-repeat sm:px-6 lg:px-24 xl:px-72 2xl:px-80">
+<body class="bg-lightGrayCyan bg-no-repeat sm:px-6 lg:px-24 xl:px-72 2xl:px-96">
     <img src="/images/logo.svg" alt="" class="mx-auto mt-10">
     <section class="whole-container bg-white grid grid-cols-1 md:grid md:grid-cols-2 mt-10 rounded-3xl shadow-lg lg:mb-10 md:mb-10 xl:mb-10 2xl:mb-10">
         <div class="bill-section mx-auto px-6" id="billSection">
@@ -27,7 +27,10 @@
                     <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="50%">50%</button>
                     <input type="text" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
                 </div>
-                <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Number of People</label>
+                <div class="flex justify-between items-center">
+                    <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Number of People</label>
+                    <p class="mt-6 font-onlyFont text-md font-semibold"></p>
+                </div>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
                     <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0">
