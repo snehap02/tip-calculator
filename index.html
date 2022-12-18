@@ -12,7 +12,7 @@
     <img src="/images/logo.svg" alt="" class="mx-auto mt-10">
     <section class="whole-container bg-white grid grid-cols-1 md:grid md:grid-cols-2 mt-10 rounded-3xl shadow-lg lg:mb-10 md:mb-10 xl:mb-10 2xl:mb-10">
         <div class="bill-section mx-auto px-6" id="billSection">
-            <form action="" class="bill flex flex-col" id="billSec">
+            <form action="" class="bill flex flex-col" id="billSec" name="form1" onsubmit="newForm()">
                 <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Bill</label>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-dollar.svg" alt="" class="h-5 mt-2">
@@ -29,11 +29,14 @@
                 </div>
                 <div class="flex justify-between items-center">
                     <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Number of People</label>
-                    <p class="mt-6 font-onlyFont text-md font-semibold"></p>
+                    <div id="para-text">
+                        <p class="mt-6 font-onlyFont text-md font-semibold" id="para"></p>
+                    </div>
+                    
                 </div>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
-                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0">
+                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0" name="personText">
                 </div>
         </div>
 
@@ -52,8 +55,9 @@
                     </div>
                     <h1 id="final-textTwo" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
                 </div>
-                <div class="flex px-8">
-                    <button type="reset" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg" value="submit">Reset</button>
+                <div class="flex flex-col px-8">
+                    <input type="submit" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg"  id="submitBtn" value="Submit" name="submit">
+                    <button type="reset" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg" value="submit" id="resetBtn">Reset</button>
                 </div>
         </div>
     </form>
