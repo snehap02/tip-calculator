@@ -12,11 +12,11 @@
     <img src="/images/logo.svg" alt="" class="mx-auto mt-10">
     <section class="whole-container bg-white grid grid-cols-1 md:grid md:grid-cols-2 mt-10 rounded-3xl shadow-lg lg:mb-10 md:mb-10 xl:mb-10 2xl:mb-10">
         <div class="bill-section mx-auto px-6" id="billSection">
-            <form action="" class="bill flex flex-col" id="billSec" name="form1" onsubmit="newForm()">
+            <form action="" class="bill flex flex-col" id="billSec" name="form1">
                 <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Bill</label>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-dollar.svg" alt="" class="h-5 mt-2">
-                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0">
+                    <input type="text" id="billInput" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0" onkeyup="calcBill()">
                 </div>
                 <h1 class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Select Tip %</h1>
                 <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3 gap-3 mt-3">
@@ -25,7 +25,7 @@
                     <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="15%">15%</button>
                     <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="25%">25%</button>
                     <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="50%">50%</button>
-                    <input type="text" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
+                    <input type="text" id="tipInput" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
                 </div>
                 <div class="flex justify-between items-center">
                     <label for="price" class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Number of People</label>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
                     <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
-                    <input type="text" id="price" class="w-full input-bill font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan input" id="inputBill" placeholder="0" name="personText">
+                    <input type="text" id="numPersonInput" class="w-full font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" placeholder="0" onkeyup="calcBill()">
                 </div>
         </div>
 
@@ -56,7 +56,6 @@
                     <h1 id="final-textTwo" class="font-onlyFont text-primary font-semibold text-3xl">$0.00</h1>
                 </div>
                 <div class="flex flex-col px-8">
-                    <input type="submit" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg"  id="submitBtn" value="Submit" name="submit">
                     <button type="reset" class="uppercase text-center bg-primary mt-8 md:mt-24 w-full font-onlyFont text-2xl font-semibold text-darkCyan py-5 md:py-3 mx-auto rounded-lg" value="submit" id="resetBtn">Reset</button>
                 </div>
         </div>
