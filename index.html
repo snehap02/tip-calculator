@@ -20,11 +20,11 @@
                 </div>
                 <h1 class="font-onlyFont text-md font-semibold text-darkGrayishCyan mt-6">Select Tip %</h1>
                 <div class="tip-container grid grid-cols-2 md:grid md:grid-cols-3 gap-3 mt-3">
-                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="5%">5%</button>
-                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="10%">10%</button>
-                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="15%">15%</button>
-                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="25%">25%</button>
-                    <button class="font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" value="50%">50%</button>
+                    <div class="text-center active:bg-teal-700 font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" data-value="5%">5%</div>
+                    <div class="text-center active:bg-teal-700 tip-btn font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" data-value="10%">10%</div>
+                    <div class="text-center active:bg-teal-700 font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" data-value="15%">15%</div>
+                    <div class="text-center active:bg-teal-700 font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" data-value="25%">25%</div>
+                    <div class="text-center active:bg-teal-700 font-onlyFont bg-darkCyan text-white rounded-md py-3 text-2xl cursor-pointer font-semibold" data-value="50%">50%</div>
                     <input type="text" id="tipInput" placeholder="Custom" class="font-onlyFont text-xl text-center font-semibold text-darkCyan outline-none bg-verylightGrayCyan rounded-md">
                 </div>
                 <div class="flex justify-between items-center">
@@ -32,11 +32,11 @@
                     <div id="para-text">
                         <p class="mt-6 font-onlyFont text-md font-semibold" id="para"></p>
                     </div>
-                    
                 </div>
-                <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3">
+                
+                <div class="flex px-4 bg-verylightGrayCyan p-2 mt-3 inp-div">
                     <img src="/images/icon-person.svg" alt="" class="h-4 mt-2">
-                    <input type="text" id="numPersonInput" class="w-full font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" placeholder="0" onkeyup="calcBill()">
+                    <input type="text" id="numPersonInput" class="w-full font-onlyFont text-right pr-4 outline-none bg-verylightGrayCyan text-2xl font-bold text-darkCyan" placeholder="0">
                 </div>
         </div>
 
